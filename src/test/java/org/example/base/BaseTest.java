@@ -20,7 +20,6 @@ public abstract class BaseTest {
 
     @BeforeAll
     public static void setUpSpec(){
-        // Печатает запрос и ответ в консоль только если тест упал
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
 
         requestSpec = new RequestSpecBuilder()

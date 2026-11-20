@@ -15,10 +15,8 @@ public class Post {
     private String body;
     private int userId;
 
-    // Пустой конструктор нужен Jackson для десериализации
     public Post(){}
 
-    //для создания
     public Post(String title, String body, int userId) {
         this.title = title;
         this.body = body;
